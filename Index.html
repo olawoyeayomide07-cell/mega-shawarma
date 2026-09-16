@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mega Shawarma | Fresh Chicken Shawarma in Akure</title>
+<meta name="description" content="Order delicious chicken shawarma, sides and more from Mega Shawarma in Oba-Ile, Akure. Fresh, flavorful and delivered to your doorstep." />
+<meta property="og:title" content="Mega Shawarma | Fresh Chicken Shawarma in Akure" />
+<meta property="og:description" content="Slow roasted to perfection, wrapped with love. Order online, pay by card or on delivery." />
+<meta property="og:type" content="website" />
+<script src="https://js.paystack.co/v1/inline.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #260810;
+    --surface: #391019;
+    --surface-2: #4a1620;
+    --border: rgba(250, 224, 190, 0.12);
+    --border-strong: rgba(250, 224, 190, 0.22);
+    --gold: #EFA23F;
+    --gold-deep: #D9862A;
+    --gold-soft: #F6C876;
+    --cream: #FBF1E4;
+    --cream-dim: rgba(251, 241, 228, 0.68);
+    --success: #4CAF6D;
+    --error: #F0796E;
+    --whatsapp: #25D366;
+    --radius-lg: 20px;
+    --radius-md: 14px;
+    --radius-sm: 10px;
+    --shadow-card: 0 6px 20px rgba(10, 2, 4, 0.35);
+    --shadow-lift: 0 14px 34px rgba(10, 2, 4, 0.45);
+  }
+
+- { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+  margin: 0;
+  background: var(–bg);
+  background-image:
+  radial-gradient(ellipse 900px 500px at 15% -5%, rgba(239,162,63,0.10), transparent 60%),
+  radial-gradient(ellipse 700px 500px at 100% 10%, rgba(239,162,63,0.06), transparent 55%);
+  color: var(–cream);
+  font-family: ‘Inter’, -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, .display { font-family: ‘Fraunces’, Georgia, serif; }
+  img { max-width: 100%; display: block; }
+  button { font-family: inherit; }
+  a { color: inherit; }
+  :focus-visible { outline: 2px solid var(–gold); outline-offset: 2px; border-radius: 4px; }
+
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+.wrap-narrow { max-width: 620px; margin: 0 auto; padding: 0 20px; }
+.wrap-menu { max-width: 980px; margin: 0 auto; padding: 0 20px; }
+
+/* ––––– Header ––––– */
+.site-header {
+position: sticky; top: 0; z-index: 50;
+background: rgba(38, 8, 16, 0.88);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid var(–border);
+}
+.site-header-inner {
+display: flex; align-items: center; justify-content: space-between;
+padding: 14px 20px; max-width: 1120px; margin: 0 auto;
+}
+.brand-mark { display: flex; align-items: center; gap: 8px; font-family: ‘Fraunces’, serif; font-weight: 700; font-size: 1.2rem; color: var(–cream); text-decoration: none; }
+.brand-mark .flame { color: var(–gold); }
+.nav-links { display: none; gap: 28px; font-size: 0.9rem; font-weight: 500; color: var(–cream-dim); }
+.nav-links a { text-decoration: none; transition: color 0.15s; }
+.nav-links a:hover { color: var(–gold); }
+.cart-nav-btn {
+position: relative; display: flex; align-items: center; gap: 8px;
+padding: 9px 16px; border-radius: 999px; border: 1px solid var(–border-strong);
+background: var(–surface); color: var(–cream); font-weight: 600; font-size: 0.85rem; cursor: pointer;
+transition: border-color 0.15s;
+}
+.cart-nav-btn:hover { border-color: var(–gold); }
+.cart-count-pill {
+position: absolute; top: -7px; right: -7px; min-width: 19px; height: 19px; padding: 0 4px;
+border-radius: 999px; background: var(–gold); color: #2A0B0F;
+font-size: 0.68rem; font-weight: 800; display: flex; align-items: center; justify-content: center;
+}
+
+@media (min-width: 860px) {
+.nav-links { display: flex; }
+}
+
+/* ––––– Hero ––––– */
+.hero { padding: 40px 0 48px; }
+.hero-grid {
+display: grid; grid-template-columns: 1fr; gap: 28px; align-items: center;
+}
+.hero-eyebrow-row { display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: var(–gold-soft); font-weight: 600; margin-bottom: 14px; }
+.hero-title { font-size: 2.5rem; line-height: 1.04; font-weight: 700; margin: 0; color: var(–cream); letter-spacing: -0.01em; }
+.hero-title em { font-style: normal; color: var(–gold); }
+.hero-tagline { font-size: 1.05rem; font-weight: 600; color: var(–gold-soft); margin: 14px 0 0; }
+.hero-sub { font-size: 0.97rem; color: var(–cream-dim); line-height: 1.55; margin: 10px 0 0; max-width: 42ch; }
+.hero-cta-row { display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap; }
+.btn-primary {
+display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+padding: 15px 28px; border-radius: 999px; border: none; cursor: pointer;
+background: linear-gradient(135deg, var(–gold), var(–gold-deep));
+color: #2A0B0F; font-weight: 700; font-size: 0.98rem;
+box-shadow: var(–shadow-lift);
+transition: transform 0.15s ease, box-shadow 0.15s ease;
+text-decoration: none; font-family: inherit;
+}
+.btn-primary:hover { transform: translateY(-1px); }
+.btn-primary:active { transform: translateY(0) scale(0.98); }
+.btn-ghost {
+display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+padding: 15px 24px; border-radius: 999px; cursor: pointer;
+background: transparent; border: 1px solid var(–border-strong); color: var(–cream); font-weight: 600; font-size: 0.95rem;
+transition: border-color 0.15s; text-decoration: none; font-family: inherit;
+}
+.btn-ghost:hover { border-color: var(–gold); }
+
+.hero-media { position: relative; border-radius: var(–radius-lg); overflow: hidden; aspect-ratio: 4/3.2; box-shadow: var(–shadow-lift); }
+.hero-media img { width: 100%; height: 100%; object-fit: cover; }
+.hero-media-badge {
+position: absolute; top: 14px; right: 14px; background: rgba(38,8,16,0.85);
+backdrop-filter: blur(6px); color: var(–gold-soft); font-size: 0.72rem; font-weight: 700;
+padding: 7px 12px; border-radius: 999px; border: 1px solid var(–border-strong);
+}
+
+@media (min-width: 780px) {
+.hero { padding: 64px 0 72px; }
+.hero-grid { grid-template-columns: 1.05fr 0.95fr; gap: 48px; }
+.hero-title { font-size: 3.4rem; }
+.hero-sub { max-width: 46ch; }
+}
+
+/* ––––– Feature strip ––––– */
+.feature-section { padding: 44px 0; border-top: 1px solid var(–border); border-bottom: 1px solid var(–border); background: rgba(255,255,255,0.012); }
+.feature-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+.feature-card {
+display: flex; gap: 14px; align-items: flex-start;
+padding: 18px; border-radius: var(–radius-md); background: var(–surface); border: 1px solid var(–border);
+}
+.feature-icon {
+flex-shrink: 0; width: 46px; height: 46px; border-radius: 12px;
+background: rgba(239,162,63,0.14); color: var(–gold); display: flex; align-items: center; justify-content: center; font-size: 1.3rem;
+}
+.feature-title { font-weight: 700; font-size: 0.95rem; margin: 0 0 3px; color: var(–cream); }
+.feature-copy { font-size: 0.84rem; color: var(–cream-dim); margin: 0; line-height: 1.45; }
+
+.service-row { display: flex; flex-direction: column; gap: 12px; margin-top: 28px; }
+.service-pill {
+display: flex; align-items: center; gap: 10px; justify-content: center;
+padding: 12px 16px; border-radius: var(–radius-sm); background: rgba(239,162,63,0.08);
+border: 1px solid rgba(239,162,63,0.2); font-size: 0.86rem; font-weight: 600; color: var(–gold-soft);
+}
+
+@media (min-width: 700px) {
+.feature-grid { grid-template-columns: repeat(3, 1fr); }
+.service-row { flex-direction: row; justify-content: center; }
+.service-pill { flex: 1; max-width: 320px; }
+}
+
+/* ––––– Section heading ––––– */
+.section-head { text-align: center; margin-bottom: 28px; }
+.section-head h2 { font-size: 1.9rem; font-weight: 700; color: var(–cream); margin: 0 0 8px; }
+.section-head p { font-size: 0.92rem; color: var(–cream-dim); margin: 0; }
+
+/* ––––– Menu ––––– */
+.menu-section { padding: 56px 0; }
+.category-tabs {
+display: flex; gap: 8px; overflow-x: auto; padding: 4px 4px 18px; margin-bottom: 8px;
+scrollbar-width: none;
+}
+.category-tabs::-webkit-scrollbar { display: none; }
+.cat-tab {
+flex-shrink: 0; padding: 10px 18px; border-radius: 999px; border: 1px solid var(–border-strong);
+background: var(–surface); color: var(–cream-dim); font-weight: 600; font-size: 0.87rem; cursor: pointer;
+transition: all 0.15s; white-space: nowrap;
+}
+.cat-tab.active { background: var(–gold); border-color: var(–gold); color: #2A0B0F; }
+.cat-tab:hover:not(.active) { border-color: var(–gold-soft); color: var(–cream); }
+
+.menu-grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
+.product-card {
+border-radius: var(–radius-lg); background: var(–surface); border: 1px solid var(–border);
+overflow: hidden; box-shadow: var(–shadow-card); display: flex; flex-direction: column;
+transition: border-color 0.15s, transform 0.15s;
+}
+.product-card:hover { border-color: var(–border-strong); }
+.product-media { position: relative; width: 100%; aspect-ratio: 4/3; overflow: hidden; background: var(–surface-2); }
+.product-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+.product-card:hover .product-media img { transform: scale(1.04); }
+.product-badge {
+position: absolute; top: 10px; left: 10px; padding: 5px 11px; border-radius: 999px;
+font-size: 0.68rem; font-weight: 800; letter-spacing: 0.01em;
+background: rgba(38,8,16,0.85); backdrop-filter: blur(4px); color: var(–gold-soft); border: 1px solid rgba(239,162,63,0.3);
+}
+.product-body { padding: 16px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+.product-name { font-size: 1rem; font-weight: 700; color: var(–cream); margin: 0; line-height: 1.3; }
+.product-desc { font-size: 0.82rem; color: var(–cream-dim); margin: 0; line-height: 1.45; flex: 1; }
+.product-footer { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 6px; }
+.product-price { font-family: ‘Fraunces’, serif; font-weight: 700; font-size: 1.25rem; color: var(–gold); }
+.product-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 4px; }
+
+.stepper {
+display: inline-flex; align-items: center; justify-content: space-between;
+border: 1px solid var(–border-strong); border-radius: 999px; overflow: hidden; background: var(–surface-2);
+}
+.stepper button {
+width: 38px; height: 38px; border: none; background: transparent; color: var(–gold);
+font-weight: 700; font-size: 1.15rem; cursor: pointer; transition: background 0.15s;
+}
+.stepper button:hover { background: rgba(239,162,63,0.1); }
+.stepper span { min-width: 30px; text-align: center; font-weight: 700; font-size: 0.9rem; }
+
+.btn-add {
+width: 100%; padding: 12px; border-radius: 999px; border: none; cursor: pointer;
+background: linear-gradient(135deg, var(–gold), var(–gold-deep)); color: #2A0B0F;
+font-weight: 700; font-size: 0.86rem; transition: transform 0.12s;
+}
+.btn-add:active { transform: scale(0.97); }
+
+@media (min-width: 640px) {
+.menu-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 960px) {
+.menu-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ––––– Cart section ––––– */
+.cart-section { padding: 56px 0; border-top: 1px solid var(–border); background: rgba(255,255,255,0.012); }
+.cart-box { border-radius: var(–radius-lg); background: var(–surface); border: 1px solid var(–border); overflow: hidden; }
+.cart-item-row {
+display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-bottom: 1px solid var(–border);
+}
+.cart-item-row:last-of-type { border-bottom: none; }
+.cart-item-thumb { width: 52px; height: 52px; border-radius: 10px; overflow: hidden; flex-shrink: 0; background: var(–surface-2); }
+.cart-item-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.cart-item-info { flex: 1; min-width: 0; }
+.cart-item-name { font-size: 0.88rem; font-weight: 600; color: var(–cream); margin: 0 0 2px; }
+.cart-item-price { font-size: 0.78rem; color: var(–cream-dim); margin: 0; }
+.cart-item-stepper { flex-shrink: 0; }
+.cart-item-linetotal { font-size: 0.85rem; font-weight: 700; color: var(–gold); min-width: 64px; text-align: right; }
+
+.cart-totals { padding: 16px; background: var(–surface-2); }
+.cart-total-row { display: flex; justify-content: space-between; font-size: 0.88rem; color: var(–cream-dim); padding: 4px 0; }
+.cart-total-row.grand { font-size: 1.05rem; font-weight: 800; color: var(–cream); padding-top: 10px; margin-top: 6px; border-top: 1px solid var(–border); }
+.cart-total-row.grand .amt { color: var(–gold); }
+.cart-empty { text-align: center; padding: 40px 20px; color: var(–cream-dim); font-size: 0.92rem; }
+.cart-empty .icon { font-size: 2rem; margin-bottom: 10px; opacity: 0.6; }
+
+/* ––––– Sticky mobile cart bar ––––– */
+.sticky-cart-bar {
+position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 60;
+display: none; align-items: center; justify-content: space-between; gap: 12px;
+padding: 14px 18px; border-radius: 999px;
+background: linear-gradient(135deg, var(–gold), var(–gold-deep));
+color: #2A0B0F; box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+border: none; cursor: pointer; font-family: inherit;
+}
+.sticky-cart-bar.visible { display: flex; }
+.sticky-cart-text { font-weight: 700; font-size: 0.88rem; text-align: left; }
+.sticky-cart-arrow { font-weight: 800; font-size: 1rem; }
+
+/* ––––– Checkout ––––– */
+.checkout-section { padding: 56px 0; }
+.checkout-group { margin-bottom: 24px; }
+.checkout-group-title {
+font-size: 0.76rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase;
+color: var(–gold-soft); margin: 0 0 14px; opacity: 0.9;
+}
+.field { margin-bottom: 14px; }
+.field label { display: block; font-size: 0.82rem; font-weight: 600; color: var(–cream-dim); margin-bottom: 6px; }
+.field input, .field textarea {
+width: 100%; border-radius: var(–radius-sm); padding: 13px 15px; font-size: 0.92rem;
+background: var(–surface); color: var(–cream); border: 1px solid var(–border-strong);
+outline: none; font-family: inherit; resize: none; transition: border-color 0.15s;
+}
+.field input:focus, .field textarea:focus { border-color: var(–gold); }
+.field input::placeholder, .field textarea::placeholder { color: rgba(251,241,228,0.35); }
+
+.pay-options { display: flex; flex-direction: column; gap: 10px; }
+.pay-option {
+display: flex; align-items: center; gap: 12px; padding: 15px 16px; border-radius: var(–radius-md);
+background: var(–surface); border: 1.5px solid var(–border-strong); cursor: pointer; transition: border-color 0.15s;
+}
+.pay-option.selected { border-color: var(–gold); background: rgba(239,162,63,0.06); }
+.pay-option input { accent-color: var(–gold); width: 18px; height: 18px; flex-shrink: 0; }
+.pay-option-icon { font-size: 1.3rem; flex-shrink: 0; }
+.pay-option-text { display: flex; flex-direction: column; gap: 1px; }
+.pay-option-title { font-weight: 700; font-size: 0.9rem; color: var(–cream); }
+.pay-option-sub { font-size: 0.76rem; color: var(–cream-dim); }
+
+.order-summary-box { border-radius: var(–radius-md); background: var(–surface); border: 1px solid var(–border); padding: 16px; margin-bottom: 20px; }
+.summary-line { display: flex; justify-content: space-between; font-size: 0.87rem; color: var(–cream-dim); padding: 5px 0; }
+.summary-line.grand { font-weight: 800; font-size: 1rem; color: var(–cream); padding-top: 10px; margin-top: 6px; border-top: 1px solid var(–border); }
+.summary-line.grand span:last-child { color: var(–gold); }
+
+.error-text { font-size: 0.78rem; font-weight: 600; color: var(–error); margin: 6px 0 0; }
+.checkout-note { font-size: 0.76rem; text-align: center; color: var(–cream-dim); opacity: 0.8; margin: 14px 0 0; line-height: 1.5; }
+.btn-pay-status { font-size: 0.82rem; text-align: center; color: var(–gold-soft); margin: 10px 0 0; display: none; }
+
+/* ––––– Confirmation ––––– */
+.confirm-box { border-radius: var(–radius-lg); background: var(–surface); border: 1px solid var(–border); padding: 40px 28px; text-align: center; }
+.confirm-icon {
+width: 64px; height: 64px; border-radius: 999px; background: rgba(76,175,109,0.15);
+color: var(–success); display: flex; align-items: center; justify-content: center;
+font-size: 1.8rem; margin: 0 auto 18px;
+}
+.confirm-box h2 { font-size: 1.5rem; margin: 0 0 6px; color: var(–cream); }
+.confirm-box .thanks { font-size: 0.9rem; color: var(–cream-dim); margin: 0 0 24px; }
+.confirm-order-box { border-radius: var(–radius-md); background: var(–surface-2); padding: 18px; margin-bottom: 24px; text-align: left; }
+.confirm-order-row { display: flex; justify-content: space-between; font-size: 0.85rem; padding: 4px 0; color: var(–cream-dim); }
+.confirm-order-row.ref span:last-child { font-weight: 700; color: var(–gold); font-family: ‘Fraunces’, serif; }
+.confirm-actions { display: flex; flex-direction: column; gap: 10px; }
+.btn-whatsapp {
+width: 100%; padding: 15px; border-radius: 999px; border: none; cursor: pointer;
+background: var(–whatsapp); color: #06280F; font-weight: 800; font-size: 0.95rem;
+box-shadow: 0 10px 24px rgba(37,211,102,0.25); transition: transform 0.12s;
+}
+.btn-whatsapp:active { transform: scale(0.97); }
+.btn-secondary {
+width: 100%; padding: 14px; border-radius: 999px; font-weight: 600; font-size: 0.88rem;
+background: transparent; color: var(–cream-dim); border: 1px solid var(–border-strong); cursor: pointer;
+}
+.btn-secondary:hover { border-color: var(–gold-soft); color: var(–cream); }
+
+/* ––––– Contact ––––– */
+.contact-section { padding: 56px 0; border-top: 1px solid var(–border); background: rgba(255,255,255,0.012); }
+.contact-grid { display: flex; flex-direction: column; gap: 24px; }
+.contact-links { display: flex; flex-direction: column; gap: 10px; }
+.contact-link {
+display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-radius: var(–radius-md);
+background: var(–surface); border: 1px solid var(–border); color: var(–cream); font-weight: 600; font-size: 0.88rem;
+text-decoration: none; transition: border-color 0.15s;
+}
+.contact-link:hover { border-color: var(–gold-soft); }
+.contact-link .icon { font-size: 1.1rem; flex-shrink: 0; }
+.map-frame { border-radius: var(–radius-md); overflow: hidden; min-height: 240px; border: 1px solid var(–border); }
+.map-frame iframe { width: 100%; height: 100%; min-height: 240px; border: 0; display: block; }
+
+@media (min-width: 780px) {
+.contact-grid { flex-direction: row; }
+.contact-links { flex: 1; }
+.map-frame { flex: 1; }
+}
+
+/* ––––– Footer ––––– */
+.site-footer { padding: 40px 0 100px; border-top: 1px solid var(–border); }
+.footer-grid { display: flex; flex-direction: column; gap: 28px; text-align: center; }
+.footer-brand { font-family: ‘Fraunces’, serif; font-weight: 700; font-size: 1.3rem; color: var(–gold); margin: 0 0 8px; }
+.footer-address { font-size: 0.84rem; color: var(–cream-dim); line-height: 1.6; margin: 0 0 10px; }
+.footer-note { font-size: 0.82rem; color: var(–gold-soft); margin: 0; }
+.footer-col-title { font-size: 0.74rem; font-weight: 800; letter-spacing: 0.03em; text-transform: uppercase; color: var(–cream-dim); margin: 0 0 10px; opacity: 0.8; }
+.footer-links { display: flex; flex-direction: column; gap: 8px; font-size: 0.85rem; }
+.footer-links a { text-decoration: none; color: var(–cream-dim); transition: color 0.15s; }
+.footer-links a:hover { color: var(–gold-soft); }
+.footer-bottom { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(–border); font-size: 0.78rem; color: var(–cream-dim); opacity: 0.7; }
+
+@media (min-width: 700px) {
+.footer-grid { flex-direction: row; text-align: left; justify-content: space-between; }
+}
+
+/* ––––– Toast ––––– */
+.toast {
+position: fixed; top: 20px; left: 50%; transform: translateX(-50%) translateY(-20px);
+background: var(–surface); border: 1px solid var(–gold); color: var(–cream);
+padding: 12px 20px; border-radius: 999px; font-size: 0.85rem; font-weight: 600;
+box-shadow: var(–shadow-lift); z-index: 100; opacity: 0; pointer-events: none;
+transition: opacity 0.25s ease, transform 0.25s ease;
+display: flex; align-items: center; gap: 8px;
+}
+.toast.visible { opacity: 1; transform: translateX(-50%) translateY(0); pointer-events: auto; }
+
+@media (prefers-reduced-motion: reduce) {
+* { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+}
+
+.sr-only {
+position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+</style>
+
+</head>
+<body>
+
+<a href="javascript:void(0)" id="skipToMenuLink" class="sr-only">Skip to menu</a>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="javascript:void(0)" id="brandHomeLink" class="brand-mark"><span class="flame">◆</span> Mega Shawarma</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="javascript:void(0)" id="navHomeLink">Home</a>
+      <a href="javascript:void(0)" id="navMenuLink">Menu</a>
+      <a href="javascript:void(0)" id="navAboutLink">About</a>
+      <a href="javascript:void(0)" id="navContactLink">Contact</a>
+    </nav>
+    <button class="cart-nav-btn" id="cartNavBtn" type="button" aria-label="View cart">
+      🛒 Cart
+      <span class="cart-count-pill" id="cartBadge" style="display:none;">0</span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="hero-eyebrow-row">📍 41, Airport Road, Oba-Ile Akure</div>
+        <h1 class="hero-title">Mega <em>Shawarma</em></h1>
+        <p class="hero-tagline">Juicy. Flavorful. Irresistible.</p>
+        <p class="hero-sub">Slow roasted to perfection, wrapped with love — made for you.</p>
+        <div class="hero-cta-row">
+          <button class="btn-primary" id="orderNowBtn" type="button">Order Now</button>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img
+          id="heroImg"
+          src="images/hero-signature-shawarma.jpg"
+          alt="Signature Mega Shawarma wrap, sliced open to show juicy chicken filling"
+          loading="eager"
+        />
+        <span class="hero-media-badge">🔥 Signature Wrap</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY US ================= -->
+
+  <section class="feature-section" id="whyUs">
+    <div class="wrap">
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🐔</div>
+          <div>
+            <p class="feature-title">Premium Chicken</p>
+            <p class="feature-copy">Quality chicken prepared for a rich, satisfying bite.</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔥</div>
+          <div>
+            <p class="feature-title">Slow Roasted</p>
+            <p class="feature-copy">Carefully roasted for that juicy, smoky flavour.</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌿</div>
+          <div>
+            <p class="feature-title">Fresh &amp; Hygienic</p>
+            <p class="feature-copy">Fresh ingredients prepared with care, every time.</p>
+          </div>
+        </div>
+      </div>
+      <div class="service-row">
+        <div class="service-pill">🛵 We deliver at your doorstep</div>
+        <div class="service-pill">🎉 Party orders accepted for all occasions</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MENU ================= -->
+
+  <section class="menu-section" id="menuSection">
+    <div class="wrap-menu">
+      <div class="section-head">
+        <h2>Our Menu</h2>
+        <p>Pick your mega — add to cart below</p>
+      </div>
+      <div class="category-tabs" id="categoryTabs" role="tablist" aria-label="Menu categories"></div>
+      <div class="menu-grid" id="menuGrid"></div>
+    </div>
+  </section>
+
+  <!-- ================= CART ================= -->
+
+  <section class="cart-section" id="cartSection">
+    <div class="wrap-narrow">
+      <div class="section-head">
+        <h2>Your Order</h2>
+      </div>
+      <div class="cart-box" id="cartBox"></div>
+      <p class="error-text" id="cartError" style="display:none; text-align:center; margin-top:12px;"></p>
+      <button class="btn-primary" style="width:100%; margin-top:18px;" id="checkoutBtn" type="button" disabled>Proceed to Checkout</button>
+    </div>
+  </section>
+
+  <!-- ================= CHECKOUT ================= -->
+
+  <section class="checkout-section" id="checkoutSection">
+    <div class="wrap-narrow" id="checkoutView">
+      <div class="section-head">
+        <h2>Checkout</h2>
+      </div>
+      <form id="checkoutForm" novalidate>
+
+```
+    <div class="checkout-group">
+      <p class="checkout-group-title">Customer Information</p>
+      <div class="field">
+        <label for="custName">Full name</label>
+        <input type="text" id="custName" placeholder="e.g. Ayomide Excel" autocomplete="name" />
+        <p class="error-text" id="errName" style="display:none;"></p>
+      </div>
+      <div class="field">
+        <label for="custPhone">Phone number</label>
+        <input type="tel" id="custPhone" placeholder="080..." autocomplete="tel" />
+        <p class="error-text" id="errPhone" style="display:none;"></p>
+      </div>
+      <div class="field">
+        <label for="custEmail">Email address</label>
+        <input type="email" id="custEmail" placeholder="you@example.com" autocomplete="email" />
+        <p class="error-text" id="errEmailField" style="display:none;"></p>
+      </div>
+    </div>
+
+    <div class="checkout-group">
+      <p class="checkout-group-title">Delivery Information</p>
+      <div class="field">
+        <label for="custAddress">Delivery address</label>
+        <textarea id="custAddress" rows="2" placeholder="Street, area, landmark" autocomplete="street-address"></textarea>
+        <p class="error-text" id="errAddress" style="display:none;"></p>
+      </div>
+    </div>
+
+    <div class="checkout-group">
+      <p class="checkout-group-title">Payment Method</p>
+      <div class="pay-options" role="radiogroup" aria-label="Payment method">
+        <label class="pay-option selected" id="payOptionCard">
+          <input type="radio" name="payMethod" value="card" checked />
+          <span class="pay-option-icon">💳</span>
+          <span class="pay-option-text">
+            <span class="pay-option-title">Pay now with card</span>
+            <span class="pay-option-sub">Secure checkout via Paystack</span>
+          </span>
+        </label>
+        <label class="pay-option" id="payOptionDelivery">
+          <input type="radio" name="payMethod" value="delivery" />
+          <span class="pay-option-icon">💵</span>
+          <span class="pay-option-text">
+            <span class="pay-option-title">Pay on delivery</span>
+            <span class="pay-option-sub">Cash or transfer when your order arrives</span>
+          </span>
+        </label>
+      </div>
+    </div>
+
+    <div class="checkout-group">
+      <p class="checkout-group-title">Order Summary</p>
+      <div class="order-summary-box">
+        <div class="summary-line"><span id="summaryItemsLabel">Items (0)</span><span id="summaryItemsAmount">₦0</span></div>
+        <div class="summary-line"><span>Delivery</span><span id="summaryDeliveryAmount">Calculated on confirmation</span></div>
+        <div class="summary-line grand"><span>Total</span><span id="summaryTotalAmount">₦0</span></div>
+      </div>
+    </div>
+
+    <p class="error-text" id="errCart2" style="display:none;"></p>
+    <button class="btn-primary" style="width:100%;" type="submit" id="placeOrderBtn">Pay &amp; Place Order</button>
+    <p class="btn-pay-status" id="payStatus"></p>
+    <p class="checkout-note">Card payments are processed securely by Paystack. Choose "Pay on delivery" if you'd rather pay cash or by transfer when your order arrives.</p>
+  </form>
+</div>
+
+<div class="wrap-narrow" id="confirmView" style="display:none;">
+  <div class="confirm-box">
+    <div class="confirm-icon">✓</div>
+    <h2>Order Received!</h2>
+    <p class="thanks">Thank you for ordering from Mega Shawarma.</p>
+    <div class="confirm-order-box">
+      <div class="confirm-order-row ref"><span>Order number</span><span id="orderRefDisplay"></span></div>
+      <div class="confirm-order-row" id="paymentRefRow" style="display:none;"><span>Payment reference</span><span id="paymentRefDisplay"></span></div>
+      <div class="confirm-order-row"><span>Items</span><span id="confirmItemCount"></span></div>
+      <div class="confirm-order-row"><span>Total</span><span id="confirmTotal"></span></div>
+      <div class="confirm-order-row"><span>Payment</span><span id="confirmPaymentMethod"></span></div>
+      <div class="confirm-order-row"><span>Delivering to</span><span id="confirmAddress" style="text-align:right; max-width:60%;"></span></div>
+    </div>
+    <p style="font-size:0.82rem; color:var(--cream-dim); margin:-10px 0 22px;">We typically prepare and deliver within 30–45 minutes depending on your location.</p>
+    <div class="confirm-actions">
+      <button class="btn-whatsapp" id="whatsappBtn" type="button">📲 Order via WhatsApp</button>
+      <button class="btn-secondary" id="newOrderBtn" type="button">Back to Menu</button>
+    </div>
+  </div>
+</div>
+```
+
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+
+  <section class="contact-section" id="contactSection">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Find Us</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-links">
+          <a class="contact-link" href="https://wa.me/2349067414343" target="_blank" rel="noreferrer"><span class="icon">💬</span> WhatsApp — 0906 741 4343</a>
+          <a class="contact-link" href="https://wa.me/2348138031865" target="_blank" rel="noreferrer"><span class="icon">💬</span> WhatsApp — 0813 803 1865</a>
+          <a class="contact-link" href="mailto:optbenard1@yahoo.com"><span class="icon">✉️</span> optbenard1@yahoo.com</a>
+          <a class="contact-link" href="https://instagram.com/Optbenard" target="_blank" rel="noreferrer"><span class="icon">📸</span> Instagram — @Optbenard</a>
+          <a class="contact-link" href="https://tiktok.com/@Optbenard" target="_blank" rel="noreferrer"><span class="icon">🎵</span> TikTok — @Optbenard</a>
+        </div>
+        <div class="map-frame">
+          <iframe title="Mega Shawarma location" loading="lazy" src="https://www.google.com/maps?q=41%2C%20Airport%20Road%2C%20Oba-Ile%20Akure%2C%20opposite%20OSOPADEC%2C%20Ondo%20State&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand">Mega Shawarma</p>
+        <p class="footer-address">41, Airport Road,<br />Oba-Ile, Akure, Ondo State</p>
+        <p class="footer-note">We deliver to your doorstep.</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Contact</p>
+        <div class="footer-links">
+          <a href="https://wa.me/2349067414343" target="_blank" rel="noreferrer">WhatsApp — 0906 741 4343</a>
+          <a href="tel:+2349067414343">Call — 0906 741 4343</a>
+          <a href="mailto:optbenard1@yahoo.com">optbenard1@yahoo.com</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Follow</p>
+        <div class="footer-links">
+          <a href="https://instagram.com/Optbenard" target="_blank" rel="noreferrer">Instagram — @Optbenard</a>
+          <a href="https://tiktok.com/@Optbenard" target="_blank" rel="noreferrer">TikTok — @Optbenard</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Mega Shawarma. All rights reserved.</div>
+  </div>
+</footer>
+
+<button class="sticky-cart-bar" id="stickyCartBar" type="button">
+  <span class="sticky-cart-text" id="stickyCartText">🛒 Cart · 0 items · ₦0</span>
+  <span class="sticky-cart-arrow">View Cart →</span>
+</button>
+
+<div class="toast" id="toast"></div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* =========================================================
+     PRODUCT DATA
+     ---------------------------------------------------------
+     To replace with real Mega Shawarma photos: change the
+     `image` URL for each product below to a local path such
+     as "images/chicken-shawarma-2-sausage.jpg" once you've
+     added your own photos to an /images folder next to this
+     file. Nothing else needs to change.
+  ========================================================= */
+  var PRODUCTS = [
+    {
+      id: "double",
+      name: "Chicken Shawarma with Two Sausages",
+      description: "The Mega classic — loaded with two sausages for the biggest appetite.",
+      price: 3500,
+      image: "images/chicken-shawarma-2-sausage.jpg",
+      category: "shawarma",
+      popular: true,
+      available: true
+    },
+    {
+      id: "single",
+      name: "Chicken Shawarma with One Sausage",
+      description: "All the same juicy chicken, one sausage, still mega satisfying.",
+      price: 3000,
+      image: "images/chicken-shawarma-1-sausage.jpg",
+      category: "shawarma",
+      popular: false,
+      available: true
+    },
+    {
+      id: "plain",
+      name: "Chicken Shawarma without Sausage",
+      description: "Pure chicken shawarma — slow roasted, wrapped fresh, no sausage.",
+      price: 2500,
+      image: "images/chicken-shawarma-plain.jpg",
+      category: "shawarma",
+      popular: false,
+      available: true
+    },
+
+    /* ---------------- Drinks ---------------- */
+    { id: "coca-cola", name: "Coca-Cola", description: "Classic ice-cold Coca-Cola.", price: 500, image: "images/drinks/coca-cola.jpg", category: "drinks", popular: true, available: true },
+    { id: "fanta", name: "Fanta", description: "Orange-flavoured carbonated soft drink.", price: 500, image: "images/drinks/fanta.jpg", category: "drinks", popular: false, available: true },
+    { id: "sprite", name: "Sprite", description: "Crisp lemon-lime carbonated soft drink.", price: 500, image: "images/drinks/sprite.jpg", category: "drinks", popular: false, available: true },
+    { id: "pepsi", name: "Pepsi", description: "Bold, refreshing cola.", price: 500, image: "images/drinks/pepsi.jpg", category: "drinks", popular: false, available: true },
+    { id: "teem", name: "Teem", description: "PepsiCo's bitter lemon soft drink.", price: 500, image: "images/drinks/teem.jpg", category: "drinks", popular: false, available: true },
+    { id: "7up", name: "7Up", description: "Crisp, refreshing lemon-lime soda.", price: 500, image: "images/drinks/7up.jpg", category: "drinks", popular: false, available: true },
+    { id: "mirinda", name: "Mirinda", description: "Fruity orange soda from PepsiCo.", price: 500, image: "images/drinks/mirinda.jpg", category: "drinks", popular: false, available: true },
+
+    { id: "hollandia-yogurt", name: "Hollandia Yogurt", description: "Creamy, ready-to-drink yogurt by CHI Limited.", price: 800, image: "images/drinks/hollandia-yogurt.jpg", category: "drinks", popular: true, available: true },
+    { id: "dudu-yogurt", name: "Dudu Yogurt", description: "Sweet and tangy ready-to-drink yogurt.", price: 500, image: "images/drinks/dudu-yogurt.jpg", category: "drinks", popular: false, available: true },
+    { id: "yoplait", name: "Yoplait", description: "Smooth, fruity yogurt drink.", price: 800, image: "images/drinks/yoplait.jpg", category: "drinks", popular: false, available: true },
+    { id: "fan-milk", name: "Fan Milk", description: "Chilled, creamy frozen dairy treat.", price: 300, image: "images/drinks/fan-milk.jpg", category: "drinks", popular: false, available: true },
+
+    { id: "chivita", name: "Chivita", description: "100% fruit juice, no added sugar.", price: 500, image: "images/drinks/chivita.jpg", category: "drinks", popular: true, available: true },
+    { id: "chi-exotic", name: "Chi Exotic", description: "Tropical fruit nectar blend by CHI Limited.", price: 500, image: "images/drinks/chi-exotic.jpg", category: "drinks", popular: false, available: true },
+    { id: "sosa", name: "Sosa Fruit Drink", description: "Unique-flavoured fruit drink by Rite Foods.", price: 500, image: "images/drinks/sosa.jpg", category: "drinks", popular: false, available: true },
+    { id: "5-alive", name: "5 Alive", description: "Popular citrus fruit juice blend.", price: 600, image: "images/drinks/5-alive.jpg", category: "drinks", popular: false, available: true },
+
+    { id: "maltina", name: "Maltina / Malta Guinness", description: "Rich, non-alcoholic malt drink.", price: 600, image: "images/drinks/maltina.jpg", category: "drinks", popular: false, available: true },
+    { id: "nutri-yo", name: "Nutri-Yo", description: "Refreshing yogurt drink.", price: 500, image: "images/drinks/nutri-yo.jpg", category: "drinks", popular: false, available: true },
+    { id: "bigi", name: "Bigi", description: "Rite Foods' soft drinks and juice — cola, apple, orange and more.", price: 500, image: "images/drinks/bigi.jpg", category: "drinks", popular: false, available: true }
+  ];
+
+  var CATEGORY_LABELS = {
+    all: "All",
+    shawarma: "🌯 Shawarma",
+    sides: "🍟 Sides",
+    drinks: "🥤 Drinks",
+    meals: "🍗 Meals",
+    specials: "🔥 Specials"
+  };
+
+  var PHONE_1 = "2349067414343";
+  var PAYSTACK_PUBLIC_KEY = "pk_test_51a6ff3c7d47c85f9eeef902542320c18ec3cc69";
+
+  /* ---------------------------------------------------------
+     Placeholder image generator.
+     ---------------------------------------------------------
+     Used only when a real photo file is missing (see the
+     `image` paths in PRODUCTS above, and the hero image tag).
+     Produces a warm, on-brand "photo coming soon" card as an
+     inline SVG data URI, so it never depends on the network
+     and can never show a broken-image icon. Once you add real
+     files under /images/ with the matching filenames, this
+     function is never called.
+  --------------------------------------------------------- */
+  window.PLACEHOLDER_IMG = function (label) {
+    var safeLabel = (label || "Mega Shawarma").replace(/&/g, "&amp;").replace(/</g, "&lt;");
+    var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">' +
+      '<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">' +
+      '<stop offset="0%" stop-color="#4a1620"/><stop offset="100%" stop-color="#2c0a0f"/>' +
+      '</linearGradient></defs>' +
+      '<rect width="800" height="600" fill="url(#g)"/>' +
+      '<circle cx="400" cy="255" r="86" fill="none" stroke="#EFA23F" stroke-width="3" opacity="0.55"/>' +
+      '<path d="M400 205 a50 50 0 0 1 0 100 a50 50 0 0 1 0 -100" fill="none" stroke="#EFA23F" stroke-width="3" opacity="0.35"/>' +
+      '<text x="400" y="380" font-family="Georgia, serif" font-size="26" fill="#F6C876" text-anchor="middle" opacity="0.9">' + safeLabel + '</text>' +
+      '<text x="400" y="412" font-family="Arial, sans-serif" font-size="15" fill="#FBF1E4" text-anchor="middle" opacity="0.5">Photo coming soon</text>' +
+      '</svg>';
+    return "data:image/svg+xml;base64," + btoa(svg);
+  };
+
+  function productImgTag(item, extraClass) {
+    var placeholderCall = "window.PLACEHOLDER_IMG('" + item.name.replace(/'/g, "\\'") + "')";
+    return '<img src="' + item.image + '" alt="' + item.name + '" loading="lazy" ' +
+      'onerror="this.onerror=null; this.src=' + placeholderCall + ';" />';
+  }
+
+  // Wire the hero image's fallback here (after PLACEHOLDER_IMG exists)
+  // rather than as an inline onerror attribute, since that attribute
+  // would fire before this script block has run.
+  (function attachHeroFallback() {
+    var heroImg = document.getElementById("heroImg");
+    if (heroImg) {
+      heroImg.addEventListener("error", function onErr() {
+        heroImg.removeEventListener("error", onErr);
+        heroImg.src = window.PLACEHOLDER_IMG("Signature Shawarma");
+      });
+    }
+  })();
+
+  var state = {
+    qty: {},
+    activeCategory: null,
+    customer: { name: "", phone: "", email: "", address: "" },
+    orderRef: "",
+    paymentRef: "",
+    paymentMethod: "card"
+  };
+
+  PRODUCTS.forEach(function (p) { state.qty[p.id] = 0; });
+
+  function formatNaira(n) {
+    return "₦" + n.toLocaleString("en-NG");
+  }
+
+  function getAvailableProducts() {
+    return PRODUCTS.filter(function (p) { return p.available; });
+  }
+
+  function getCategoriesInUse() {
+    var cats = [];
+    getAvailableProducts().forEach(function (p) {
+      if (cats.indexOf(p.category) === -1) cats.push(p.category);
+    });
+    return cats;
+  }
+
+  function getCartItems() {
+    return getAvailableProducts()
+      .map(function (p) { return Object.assign({}, p, { qty: state.qty[p.id] || 0 }); })
+      .filter(function (p) { return p.qty > 0; });
+  }
+
+  function getSubtotal() {
+    return getCartItems().reduce(function (sum, i) { return sum + i.qty * i.price; }, 0);
+  }
+
+  function getTotalCount() {
+    return getCartItems().reduce(function (sum, i) { return sum + i.qty; }, 0);
+  }
+
+  /* ---------------- Toast ---------------- */
+  var toastTimer = null;
+  function showToast(text) {
+    var el = document.getElementById("toast");
+    el.textContent = text;
+    el.classList.add("visible");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { el.classList.remove("visible"); }, 1800);
+  }
+
+  /* ---------------- Category tabs ---------------- */
+  function renderCategoryTabs() {
+    var tabs = document.getElementById("categoryTabs");
+    var cats = getCategoriesInUse();
+    if (state.activeCategory === null || cats.indexOf(state.activeCategory) === -1) {
+      state.activeCategory = cats[0] || null;
+    }
+    var html = "";
+    cats.forEach(function (cat) {
+      var label = CATEGORY_LABELS[cat] || cat;
+      html += '<button type="button" class="cat-tab' + (state.activeCategory === cat ? " active" : "") + '" data-cat="' + cat + '" role="tab" aria-selected="' + (state.activeCategory === cat) + '">' + label + '</button>';
+    });
+    tabs.innerHTML = html;
+    tabs.querySelectorAll(".cat-tab").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        state.activeCategory = btn.getAttribute("data-cat");
+        renderCategoryTabs();
+        renderMenu();
+      });
+    });
+  }
+
+  /* ---------------- Menu ---------------- */
+  function renderMenu() {
+    var grid = document.getElementById("menuGrid");
+    var products = getAvailableProducts().filter(function (p) {
+      return p.category === state.activeCategory;
+    });
+
+    grid.innerHTML = products.map(function (item) {
+      var q = state.qty[item.id] || 0;
+      var badge = item.popular ? '<span class="product-badge">🔥 Popular</span>' : "";
+      return '<article class="product-card">' +
+        '<div class="product-media">' +
+          productImgTag(item) +
+          badge +
+        '</div>' +
+        '<div class="product-body">' +
+          '<h3 class="product-name">' + item.name + '</h3>' +
+          '<p class="product-desc">' + item.description + '</p>' +
+          '<div class="product-footer">' +
+            '<span class="product-price">' + formatNaira(item.price) + '</span>' +
+            '<div class="stepper">' +
+              '<button type="button" data-action="dec" data-id="' + item.id + '" aria-label="Decrease quantity of ' + item.name + '">&minus;</button>' +
+              '<span id="qty-' + item.id + '">' + q + '</span>' +
+              '<button type="button" data-action="inc" data-id="' + item.id + '" aria-label="Increase quantity of ' + item.name + '">+</button>' +
+            '</div>' +
+          '</div>' +
+          '<div class="product-actions">' +
+            '<button class="btn-add" type="button" data-action="add" data-id="' + item.id + '" data-name="' + item.name + '">Add to Cart</button>' +
+          '</div>' +
+        '</div>' +
+      '</article>';
+    }).join("");
+
+    grid.querySelectorAll("button[data-action]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var id = btn.getAttribute("data-id");
+        var action = btn.getAttribute("data-action");
+        var current = state.qty[id] || 0;
+        if (action === "dec") state.qty[id] = Math.max(0, current - 1);
+        if (action === "inc") state.qty[id] = current + 1;
+        if (action === "add") {
+          state.qty[id] = current + 1;
+          showToast("Added to cart 🎉");
+        }
+        updateAll();
+      });
+    });
+  }
+
+  /* ---------------- Cart ---------------- */
+  function renderCart() {
+    var box = document.getElementById("cartBox");
+    var items = getCartItems();
+    var checkoutBtn = document.getElementById("checkoutBtn");
+
+    if (items.length === 0) {
+      box.innerHTML = '<div class="cart-empty"><div class="icon">🛒</div>Your cart is empty.<br />Add a shawarma above to get started.</div>';
+      checkoutBtn.disabled = true;
+    } else {
+      var rows = items.map(function (item) {
+        return '<div class="cart-item-row">' +
+          '<div class="cart-item-thumb">' + productImgTag(item) + '</div>' +
+          '<div class="cart-item-info">' +
+            '<p class="cart-item-name">' + item.name + '</p>' +
+            '<p class="cart-item-price">' + formatNaira(item.price) + ' each</p>' +
+          '</div>' +
+          '<div class="stepper cart-item-stepper">' +
+            '<button type="button" data-action="dec" data-id="' + item.id + '" aria-label="Decrease quantity of ' + item.name + '">&minus;</button>' +
+            '<span id="cart-qty-' + item.id + '">' + item.qty + '</span>' +
+            '<button type="button" data-action="inc" data-id="' + item.id + '" aria-label="Increase quantity of ' + item.name + '">+</button>' +
+          '</div>' +
+          '<div class="cart-item-linetotal">' + formatNaira(item.qty * item.price) + '</div>' +
+        '</div>';
+      }).join("");
+
+      var subtotal = getSubtotal();
+      box.innerHTML = rows +
+        '<div class="cart-totals">' +
+          '<div class="cart-total-row"><span>Subtotal</span><span>' + formatNaira(subtotal) + '</span></div>' +
+          '<div class="cart-total-row"><span>Delivery</span><span>Calculated at checkout</span></div>' +
+          '<div class="cart-total-row grand"><span>Total</span><span class="amt">' + formatNaira(subtotal) + '</span></div>' +
+        '</div>';
+      checkoutBtn.disabled = false;
+
+      box.querySelectorAll("button[data-action]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var id = btn.getAttribute("data-id");
+          var action = btn.getAttribute("data-action");
+          var current = state.qty[id] || 0;
+          if (action === "dec") state.qty[id] = Math.max(0, current - 1);
+          if (action === "inc") state.qty[id] = current + 1;
+          updateAll();
+        });
+      });
+    }
+    document.getElementById("cartError").style.display = "none";
+  }
+
+  function updateQtyDisplays() {
+    getAvailableProducts().forEach(function (p) {
+      var menuEl = document.getElementById("qty-" + p.id);
+      if (menuEl) menuEl.textContent = state.qty[p.id] || 0;
+    });
+  }
+
+  function renderCartBadge() {
+    var count = getTotalCount();
+    var badge = document.getElementById("cartBadge");
+    if (count > 0) {
+      badge.style.display = "flex";
+      badge.textContent = count;
+    } else {
+      badge.style.display = "none";
+    }
+  }
+
+  function renderStickyBar() {
+    var count = getTotalCount();
+    var bar = document.getElementById("stickyCartBar");
+    var text = document.getElementById("stickyCartText");
+    var confirmVisible = document.getElementById("confirmView").style.display === "block";
+    if (count > 0 && !confirmVisible) {
+      bar.classList.add("visible");
+      text.textContent = "🛒 Cart · " + count + " item" + (count !== 1 ? "s" : "") + " · " + formatNaira(getSubtotal());
+    } else {
+      bar.classList.remove("visible");
+    }
+  }
+
+  function renderCheckoutSummary() {
+    var count = getTotalCount();
+    var subtotal = getSubtotal();
+    document.getElementById("summaryItemsLabel").textContent = "Items (" + count + ")";
+    document.getElementById("summaryItemsAmount").textContent = formatNaira(subtotal);
+    document.getElementById("summaryTotalAmount").textContent = formatNaira(subtotal);
+  }
+
+  function updateAll() {
+    updateQtyDisplays();
+    renderCart();
+    renderCartBadge();
+    renderStickyBar();
+    renderCheckoutSummary();
+  }
+
+  function scrollToId(id) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    var header = document.querySelector(".site-header");
+    var headerHeight = header ? header.offsetHeight : 0;
+    var extraGap = 12; // small breathing room below the sticky header
+    var targetY = el.getBoundingClientRect().top + window.pageYOffset - headerHeight - extraGap;
+    window.scrollTo({ top: Math.max(0, targetY), behavior: "smooth" });
+  }
+
+  /* ---------------- Validation ---------------- */
+  function clearFieldErrors() {
+    ["errName", "errPhone", "errEmailField", "errAddress", "errCart2"].forEach(function (id) {
+      var el = document.getElementById(id);
+      el.style.display = "none";
+      el.textContent = "";
+    });
+  }
+
+  function isValidEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+
+  function validate() {
+    clearFieldErrors();
+    var valid = true;
+    var name = document.getElementById("custName").value.trim();
+    var phone = document.getElementById("custPhone").value.trim();
+    var email = document.getElementById("custEmail").value.trim();
+    var address = document.getElementById("custAddress").value.trim();
+    var digits = phone.replace(/\D/g, "");
+    var payMethod = document.querySelector('input[name="payMethod"]:checked').value;
+
+    if (!name) {
+      document.getElementById("errName").textContent = "Please enter your name.";
+      document.getElementById("errName").style.display = "block";
+      valid = false;
+    }
+    if (!(digits.length === 11 || (digits.length === 13 && digits.indexOf("234") === 0))) {
+      document.getElementById("errPhone").textContent = "Enter a valid Nigerian phone number.";
+      document.getElementById("errPhone").style.display = "block";
+      valid = false;
+    }
+    if (payMethod === "card" && !isValidEmail(email)) {
+      document.getElementById("errEmailField").textContent = "Enter a valid email — needed for your payment receipt.";
+      document.getElementById("errEmailField").style.display = "block";
+      valid = false;
+    }
+    if (!address) {
+      document.getElementById("errAddress").textContent = "Please enter a delivery address.";
+      document.getElementById("errAddress").style.display = "block";
+      valid = false;
+    }
+    if (getCartItems().length === 0) {
+      document.getElementById("errCart2").textContent = "Add at least one item to your order.";
+      document.getElementById("errCart2").style.display = "block";
+      valid = false;
+    }
+
+    if (valid) {
+      state.customer.name = name;
+      state.customer.phone = phone;
+      state.customer.email = email;
+      state.customer.address = address;
+      state.paymentMethod = payMethod;
+    }
+    return valid;
+  }
+
+  /* ---------------- WhatsApp message ---------------- */
+  function buildWhatsAppMessage(ref) {
+    var lines = getCartItems().map(function (i) {
+      return "- " + i.name + " x" + i.qty + " — " + formatNaira(i.qty * i.price);
+    });
+    var payLine = state.paymentMethod === "card"
+      ? "Card — PAID (ref: " + state.paymentRef + ")"
+      : "Pay on delivery";
+    var msg = "Mega Shawarma Order\n\n" +
+      "Customer: " + state.customer.name + "\n" +
+      "Phone: " + state.customer.phone + "\n" +
+      "Delivery Address: " + state.customer.address + "\n\n" +
+      "Order:\n" + lines.join("\n") + "\n\n" +
+      "Subtotal: " + formatNaira(getSubtotal()) + "\n" +
+      "Delivery: To be confirmed\n" +
+      "Total: " + formatNaira(getSubtotal()) + "\n\n" +
+      "Payment method: " + payLine + "\n" +
+      "Order ref: " + ref;
+    return encodeURIComponent(msg);
+  }
+
+  /* ---------------- Confirmation ---------------- */
+  function showConfirmation() {
+    var ref = "MS-" + Date.now().toString().slice(-8);
+    state.orderRef = ref;
+    document.getElementById("orderRefDisplay").textContent = "#" + ref;
+
+    if (state.paymentMethod === "card" && state.paymentRef) {
+      document.getElementById("paymentRefRow").style.display = "flex";
+      document.getElementById("paymentRefDisplay").textContent = state.paymentRef;
+    } else {
+      document.getElementById("paymentRefRow").style.display = "none";
+    }
+
+    var count = getTotalCount();
+    document.getElementById("confirmItemCount").textContent = count + " item" + (count !== 1 ? "s" : "");
+    document.getElementById("confirmTotal").textContent = formatNaira(getSubtotal());
+    document.getElementById("confirmPaymentMethod").textContent = state.paymentMethod === "card" ? "Paid online" : "Pay on delivery";
+    document.getElementById("confirmAddress").textContent = state.customer.address;
+
+    document.getElementById("checkoutView").style.display = "none";
+    document.getElementById("confirmView").style.display = "block";
+    setPayStatus("");
+    setPlaceOrderBtnState(false);
+    renderStickyBar();
+    window.scrollTo({ top: document.getElementById("checkoutSection").offsetTop - 60, behavior: "smooth" });
+  }
+
+  function resetOrder() {
+    PRODUCTS.forEach(function (p) { state.qty[p.id] = 0; });
+    state.customer = { name: "", phone: "", email: "", address: "" };
+    state.orderRef = "";
+    state.paymentRef = "";
+    state.paymentMethod = "card";
+    document.getElementById("custName").value = "";
+    document.getElementById("custPhone").value = "";
+    document.getElementById("custEmail").value = "";
+    document.getElementById("custAddress").value = "";
+    document.querySelector('input[name="payMethod"][value="card"]').checked = true;
+    updatePayOptionStyles();
+    document.getElementById("checkoutView").style.display = "block";
+    document.getElementById("confirmView").style.display = "none";
+    clearFieldErrors();
+    updateAll();
+    scrollToId("menuSection");
+  }
+
+  function setPayStatus(text) {
+    var el = document.getElementById("payStatus");
+    el.textContent = text;
+    el.style.display = text ? "block" : "none";
+  }
+
+  function setPlaceOrderBtnState(disabled) {
+    var btn = document.getElementById("placeOrderBtn");
+    btn.disabled = disabled;
+    var cardChecked = document.querySelector('input[name="payMethod"][value="card"]').checked;
+    btn.textContent = disabled ? "Processing…" : (cardChecked ? "Pay & Place Order" : "Place Order");
+  }
+
+  function updatePayOptionStyles() {
+    var cardChecked = document.querySelector('input[name="payMethod"][value="card"]').checked;
+    document.getElementById("payOptionCard").classList.toggle("selected", cardChecked);
+    document.getElementById("payOptionDelivery").classList.toggle("selected", !cardChecked);
+    var btn = document.getElementById("placeOrderBtn");
+    btn.textContent = cardChecked ? "Pay & Place Order" : "Place Order";
+  }
+
+  /* ---------------- Paystack ---------------- */
+  function waitForPaystack(callback) {
+    var attempts = 0;
+    var maxAttempts = 20; // ~5 seconds
+    var interval = setInterval(function () {
+      attempts++;
+      if (typeof PaystackPop !== "undefined") {
+        clearInterval(interval);
+        callback(true);
+      } else if (attempts >= maxAttempts) {
+        clearInterval(interval);
+        callback(false);
+      }
+    }, 250);
+  }
+
+  function payWithPaystack(onSuccess) {
+    var amountKobo = Math.round(getSubtotal() * 100);
+    var handler = PaystackPop.setup({
+      key: PAYSTACK_PUBLIC_KEY,
+      email: state.customer.email,
+      amount: amountKobo,
+      currency: "NGN",
+      metadata: {
+        custom_fields: [
+          { display_name: "Customer Name", variable_name: "customer_name", value: state.customer.name },
+          { display_name: "Phone", variable_name: "phone", value: state.customer.phone },
+          { display_name: "Delivery Address", variable_name: "address", value: state.customer.address }
+        ]
+      },
+      callback: function (response) {
+        state.paymentRef = response.reference;
+        onSuccess();
+      },
+      onClose: function () {
+        setPayStatus("Payment cancelled — you can try again or choose Pay on delivery.");
+        setPlaceOrderBtnState(false);
+      }
+    });
+    handler.openIframe();
+  }
+
+  /* ---------------- Wiring ---------------- */
+  document.getElementById("cartNavBtn").addEventListener("click", function () { scrollToId("cartSection"); });
+  document.getElementById("orderNowBtn").addEventListener("click", function () { scrollToId("menuSection"); });
+  document.getElementById("checkoutBtn").addEventListener("click", function () { scrollToId("checkoutSection"); });
+  document.getElementById("stickyCartBar").addEventListener("click", function () { scrollToId("cartSection"); });
+
+  document.getElementById("skipToMenuLink").addEventListener("click", function () { scrollToId("menuSection"); });
+  document.getElementById("brandHomeLink").addEventListener("click", function () { window.scrollTo({ top: 0, behavior: "smooth" }); });
+  document.getElementById("navHomeLink").addEventListener("click", function () { window.scrollTo({ top: 0, behavior: "smooth" }); });
+  document.getElementById("navMenuLink").addEventListener("click", function () { scrollToId("menuSection"); });
+  document.getElementById("navAboutLink").addEventListener("click", function () { scrollToId("whyUs"); });
+  document.getElementById("navContactLink").addEventListener("click", function () { scrollToId("contactSection"); });
+
+  document.querySelectorAll('input[name="payMethod"]').forEach(function (radio) {
+    radio.addEventListener("change", updatePayOptionStyles);
+  });
+  document.getElementById("payOptionCard").addEventListener("click", function () {
+    document.querySelector('input[name="payMethod"][value="card"]').checked = true;
+    updatePayOptionStyles();
+  });
+  document.getElementById("payOptionDelivery").addEventListener("click", function () {
+    document.querySelector('input[name="payMethod"][value="delivery"]').checked = true;
+    updatePayOptionStyles();
+  });
+
+  document.getElementById("checkoutForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (!validate()) return;
+
+    if (state.paymentMethod === "card") {
+      setPlaceOrderBtnState(true);
+      setPayStatus("Loading secure checkout…");
+      waitForPaystack(function (ok) {
+        if (!ok) {
+          setPayStatus("Couldn't reach the payment service. Check your internet connection and try again, or choose Pay on delivery below.");
+          setPlaceOrderBtnState(false);
+          return;
+        }
+        setPayStatus("Opening secure Paystack checkout…");
+        payWithPaystack(function () {
+          showConfirmation();
+        });
+      });
+    } else {
+      showConfirmation();
+    }
+  });
+
+  document.getElementById("whatsappBtn").addEventListener("click", function () {
+    var msg = buildWhatsAppMessage(state.orderRef);
+    window.open("https://wa.me/" + PHONE_1 + "?text=" + msg, "_blank");
+  });
+  document.getElementById("newOrderBtn").addEventListener("click", resetOrder);
+
+  /* ---------------- Initial render ---------------- */
+  renderCategoryTabs();
+  renderMenu();
+  updateAll();
+})();
+</script>
+
+</body>
+</html>
